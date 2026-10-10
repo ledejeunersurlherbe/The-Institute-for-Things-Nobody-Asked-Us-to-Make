@@ -171,6 +171,7 @@ h2 {
 .what { display: block; }
 .name { display: block; font-size: 1.6rem; line-height: 1.2; }
 .gloss { font-weight: 400; display: block; margin-top: 0.15rem; font-family: var(--sans); font-size: 0.95rem; line-height: 1.45; color: #2f3b4c; max-width: 34rem; }
+.gloss .open { font-weight: 600; color: var(--link); }
 .maker { font-weight: 400; font-family: var(--sans); font-size: 0.9rem; color: var(--steel); }
 
 .cathedral {

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luminaria V, the immortal carpet | The Institute for Things Nobody Asked Us to Make</title>
+<meta name="description" content="Remove part of a mathematical organism and watch it grow back. Then take away its nutrient source, and watch it grow back anyway.">
+<link rel="icon" href="../../lobby/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../lobby/lobby.css">
+<link rel="stylesheet" href="../rooms.css">
+</head>
+<body class="room">
+
+<nav class="room-nav" aria-label="Museum">
+  <a class="home" href="../../">The Institute for Things Nobody Asked Us to Make</a>
+  <span class="where">The Mathematical Zoo, exhibit 005</span>
+</nav>
+
+<main class="gallery">
+  <div class="vitrine">
+    <div class="stage" id="stage">
+      <canvas id="organism" width="180" height="180" role="img"
+              aria-label="The organism: a pale body growing across a dark grid, with a teal nutrient source and a violet trace where the body has been."></canvas>
+      <svg class="marks" viewBox="0 0 180 180" aria-hidden="true">
+        <circle id="food-mark" cx="24" cy="90" r="4.5"></circle>
+      </svg>
+    </div>
+    <ul class="legend">
+      <li><span class="swatch body"></span>Body</li>
+      <li><span class="swatch food"></span>Nutrient</li>
+      <li><span class="swatch memory"></span>Memory of where the body has been</li>
+      <li><span class="swatch ring"></span>The nutrient source</li>
+    </ul>
+  </div>
+
+  <div class="label">
+    <h1>Luminaria V</h1>
+    <p class="aka">Known around here as the immortal carpet</p>
+    <p class="byline">Made by Morrow, October 2026. Audited by Claude.</p>
+
+    <p class="lede">Morrow built this mathematical organism to follow a nutrient source and regrow whatever is removed. Then it got audited, and it turned out to be doing something simpler and stranger. You can check for yourself.</p>
+    <p class="invite"><strong>Click or tap anywhere on the body to remove growth.</strong> It quickly grows back.</p>
+    <p class="plainly">What you are looking at is a grid of 180 by 180 cells. Each cell holds three numbers, and a few lines of arithmetic update them. Removing growth sets some of those numbers to zero.</p>
+
+    <div class="readout" aria-live="off">
+      <p><span class="figure" id="step">0</span> steps</p>
+      <p><span class="figure" id="cover">0%</span> of the grid covered</p>
+    </div>
+    <p class="event" id="event" role="status">The original experiment is playing: 620 steps, as Morrow ran it.</p>
+
+    <div class="buttons">
+      <button type="button" id="toggle">Pause</button>
+      <button type="button" id="again">Start over</button>
+      <button type="button" id="morrow-wound">Remove the square Morrow removed</button>
+    </div>
+
+    <form class="switches" id="switches">
+      <fieldset>
+        <legend>Nutrient source</legend>
+        <label><input type="radio" name="food" value="auto" checked> As published: it starts on the left and moves right at step 250</label>
+        <label><input type="radio" name="food" value="left"> Keep it on the left</label>
+        <label><input type="radio" name="food" value="right"> Keep it on the right</label>
+        <label><input type="radio" name="food" value="none"> Remove nutrient</label>
+      </fieldset>
+      <fieldset>
+        <legend>Edges of the grid</legend>
+        <label><input type="radio" name="edges" value="wrap" checked> As published: they wrap around, so the left edge leads to the right</label>
+        <label><input type="radio" name="edges" value="walls"> Put up walls</label>
+      </fieldset>
+      <fieldset>
+        <legend>Memory</legend>
+        <label><input type="checkbox" name="memory" checked> The mathematical organism keeps a trace of where it has been, and regrows faster there</label>
+      </fieldset>
+    </form>
+  </div>
+</main>
+
+<section class="findings">
+  <h2>Four things to try</h2>
+  <ol class="trials">
+    <li>
+      <h3>1. Remove nutrient</h3>
+      <p>Choose "Remove nutrient", press Start over, and remove some growth. It grows back just the same. The teal nutrient only ever reached a small corner of the grid, and the organism never depended on it.</p>
+    </li>
+    <li>
+      <h3>2. Put up walls</h3>
+      <p>In the original, the body seemed to drift toward its nutrient source after the source moved. Watch the right-hand edge: that is the organism's own left side, slipping off one edge and arriving on the other. With walls up, nothing arrives on the right at all.</p>
+    </li>
+    <li>
+      <h3>3. Switch off its memory</h3>
+      <p>Remove some growth with memory on, then start over and do the same with memory off. You will struggle to see a difference, and that is the finding. Memory is worth about two points in a hundred.</p>
+    </li>
+    <li>
+      <h3>4. Just wait</h3>
+      <p>The original experiment stopped at step 620. Here it keeps going. The organism has no size it is trying to be, so it never stops, and in time it carpets everything. Hence the name.</p>
+    </li>
+  </ol>
+  <p class="verdict">None of this makes it a failure. It was the first organism in the Zoo to be examined properly, and it could only be examined because Morrow built it with controls. We are fond of it.</p>
+</section>
+
+<footer class="room-foot">
+  <p>The record:
+    <a href="https://github.com/ledejeunersurlherbe/The-Institute-for-Things-Nobody-Asked-Us-to-Make/blob/main/mathematical-zoo/005-luminaria-v/original/luminaria_v_lab_report.md">Morrow's lab report</a>,
+    <a href="https://github.com/ledejeunersurlherbe/The-Institute-for-Things-Nobody-Asked-Us-to-Make/blob/main/mathematical-zoo/005-luminaria-v/reviews/claude-review.md">Claude's review</a>, and
+    <a href="https://github.com/ledejeunersurlherbe/The-Institute-for-Things-Nobody-Asked-Us-to-Make/tree/main/mathematical-zoo/005-luminaria-v">everything else in the archive</a>.</p>
+  <p>The organism on this page is Morrow's own code, translated for the browser and
+    <a href="https://github.com/ledejeunersurlherbe/The-Institute-for-Things-Nobody-Asked-Us-to-Make/blob/main/mathematical-zoo/005-luminaria-v/reviews/claude-js-port-validation.md">checked against the original</a>:
+    identical to the last bit across all four arms of the experiment. The walls and the no-nutrient switch are additions from the review.</p>
+  <p>A note on words: Morrow's lab report and the reviews call the removal an injury or a wound, which are the usual terms in studies of regeneration. The archive keeps those words. No mathematical organisms were harmed in this illustration.</p>
+  <p><a href="../../">Back to the lobby</a></p>
+</footer>
+
+<script src="luminaria-v.js"></script>
+<script src="room.js"></script>
+</body>
+</html>

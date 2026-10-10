@@ -1,8 +1,8 @@
 # 002 · Luminaria II
 
-*Growth and wound response*
+*Growth, and regrowth after removal*
 
-**What it is.** A neural cellular automaton: a grid of cells that all follow the same small learned rule, each seeing only its immediate neighbours. The rule is trained so that a single seeded cell grows into a target shape, a translucent ring with a bright core. The grown shape is then wounded by blanking a rectangle, and the script measures how much of it returns, against an unwounded control run with identical random updates.
+**What it is.** A neural cellular automaton: a grid of cells that all follow the same small learned rule, each seeing only its immediate neighbours. The rule is trained so that a single seeded cell grows into a target shape, a translucent ring with a bright core. Part of the grown shape is then removed by blanking a rectangle, and the script measures how much of it returns, against an untouched control run with identical random updates.
 
 | | |
 |---|---|
@@ -22,14 +22,14 @@ Nothing yet. This exhibit has not been re-run or reviewed.
 Things a reviewer should look at:
 
 - Whether the saved weights, loaded into the script's model, reproduce the growth and repair the maker saw.
-- The training loop only ever grows the shape from a seed. It never trains on damaged shapes. Any regrowth after wounding is therefore untrained behaviour, which makes it more interesting if it happens and less surprising if it does not.
-- The wound is one rectangle, one random seed, one run.
+- The training loop only ever grows the shape from a seed. It never trains on damaged shapes. Any regrowth after a removal is therefore untrained behaviour, which makes it more interesting if it happens and less surprising if it does not.
+- The removal is one rectangle, one random seed, one run.
 
 ## In `original/`
 
 | File | What it is |
 |---|---|
-| `luminaria_ii.py` | Training, growth, wounding, control run, figure and measurements |
+| `luminaria_ii.py` | Training, growth, removal, control run, figure and measurements |
 | `luminaria_ii_weights.pt` | The trained weights Morrow saved (PyTorch format, about 19 KB) |
 
 ## Run it
@@ -41,7 +41,7 @@ pip install torch
 python luminaria_ii.py
 ```
 
-It retrains from scratch each time (280 training steps) and prints the wound measurements at the end.
+It retrains from scratch each time (280 training steps) and prints the regrowth measurements at the end.
 
 ## Missing
 

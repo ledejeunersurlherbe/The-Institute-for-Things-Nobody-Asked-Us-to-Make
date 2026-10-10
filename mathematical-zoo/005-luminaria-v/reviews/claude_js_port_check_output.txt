@@ -1,0 +1,35 @@
+Original: luminaria_v_controlled.py     Port: luminaria-v.js
+
+1. Body field, cell by cell (largest difference in any of 32,400 cells)
+   step 369  base               0.000e+00
+   step 370  injured_memory     0.000e+00
+   step 370  injured_no_memory  0.000e+00
+   step 370  sham_memory        0.000e+00
+   step 370  sham_no_memory     0.000e+00
+   step 430  injured_memory     0.000e+00
+   step 430  injured_no_memory  0.000e+00
+   step 430  sham_memory        0.000e+00
+   step 430  sham_no_memory     0.000e+00
+   step 520  injured_memory     0.000e+00
+   step 520  injured_no_memory  0.000e+00
+   step 520  sham_memory        0.000e+00
+   step 520  sham_no_memory     0.000e+00
+   step 620  injured_memory     0.000e+00
+   step 620  injured_no_memory  0.000e+00
+   step 620  sham_memory        0.000e+00
+   step 620  sham_no_memory     0.000e+00
+
+2. Measurements at every step, port against the original run
+   1373 rows.  Largest difference: total mass 1.091e-11, centre 2.842e-13, wound density 5.551e-16
+
+3. Measurements at every step, port against the archived CSV
+   1373 rows.  Largest difference: total mass 1.091e-11, centre 2.842e-13, wound density 5.551e-16
+
+   Wound-zone density from the port, to compare with the lab report:
+   sham_memory        just after 0.4044   step 430 0.4814   step 620 0.7198   mass at 620 5612.8
+   injured_memory     just after 0.0000   step 430 0.1081   step 620 0.4204   mass at 620 5272.7
+   sham_no_memory     just after 0.4043   step 430 0.4792   step 620 0.7116   mass at 620 5523.0
+   injured_no_memory  just after 0.0000   step 430 0.0960   step 620 0.4008   mass at 620 5170.8
+
+Largest field difference: 0.000e+00.  Largest measurement difference: 1.091e-11
+VERDICT: fields identical to the last bit; measurements agree to rounding in the summation

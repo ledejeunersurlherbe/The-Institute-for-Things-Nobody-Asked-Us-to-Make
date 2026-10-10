@@ -21,7 +21,7 @@ All three are accepted.
 
 **The scaffold is engineered.** It is. The scaffold is a field written into the model for the purpose of remembering position, and the result that it helps the body remember position is therefore close to guaranteed. What the experiment adds is narrower: the size of the effect, the fact that it leaves the size set-point alone, and the unplanned finding that it slows recovery when erased. A stronger specimen would have memory arise from something the body already does, not from a field added for the purpose.
 
-**There is no resource-dependent metabolism.** Correct, and this is the same fault the maker found in Luminaria V. *Tenax parva* needs no food at all. Its size limit comes from self-inhibition, not from running out of anything. A body whose size was set by a resource it must consume would be a better organism and a harder one to build.
+**There is no resource-dependent metabolism.** Correct, and this is the same fault the maker found in Luminaria V. *Tenax parva* needs no nutrient at all. Its size limit comes from self-inhibition, not from running out of anything. A body whose size was set by a resource it must consume would be a better organism and a harder one to build.
 
 **Positional recovery is not morphological recovery.** Agreed, and the card already says so. The body is round, a round body regrows round whatever it remembers, and the experiment measures only where the body ends up. Testing shape would need a body with a shape that the physics does not give it for free, such as an L or a crescent held in place by the scaffold, then cut.
 

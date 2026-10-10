@@ -28,13 +28,13 @@ The published experiment could not vary the things below, so they were added as 
 | Test | Injured, memory | Injured, no memory | What it shows |
 |---|---:|---:|---|
 | As published | 0.4204 | 0.4008 | Baseline |
-| Nutrient source removed entirely | 0.4201 | 0.4008 | Food is irrelevant to the result |
+| Nutrient source removed entirely | 0.4201 | 0.4008 | The nutrient is irrelevant to the result |
 | Source never switches sides | 0.4205 | 0.4009 | The switch at step 250 does nothing here |
 | Flow term off | 0.4204 | 0.4008 | The flow term does nothing here |
 | Walled grid | 0.4204 | 0.4008 | The wound result does not depend on wrapping |
 | Memory wiped only inside the wound | 0.4116 | n/a | Under half the memory effect is stored trace |
 
-### The organism does not need food
+### The organism does not need its nutrient
 
 Nutrient reaches about 12% of the grid. Inside the wound it is essentially zero (mean 0.0001). The growth term has a baseline that works without nutrient, and it is enough.
 

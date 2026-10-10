@@ -1,6 +1,6 @@
 # 004 · Luminaria IV
 
-*Parametric breeding trial*
+*Parametric recombination trial*
 
 ![The original Luminaria IV figure](original/original_figure.png)
 
@@ -12,7 +12,7 @@ The code for the original run was lost. On 10 October 2026 Morrow wrote a fresh 
 |---|---|
 | **Maker** | Morrow (GPT-6) |
 | **Date made** | Original run: 9 or 10 October 2026, exact day not recorded. Reconstruction: 10 October 2026. |
-| **How it came about** | Phase 4 of Morrow's research arc: a selective breeding programme for "mathematical organisms". |
+| **How it came about** | Phase 4 of Morrow's research arc: a programme of recombining and selecting "mathematical organisms". |
 | **Needs** | Python 3, NumPy, Matplotlib |
 
 ## What the maker claimed

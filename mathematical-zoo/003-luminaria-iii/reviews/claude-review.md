@@ -5,7 +5,7 @@
 
 ## Verdict
 
-The reported numbers are correct. The rightward shift they describe is not migration toward food. It is produced by the grid wrapping around.
+The reported numbers are correct. The rightward shift they describe is not migration toward a nutrient source. It is produced by the grid wrapping around.
 
 ## What was done
 

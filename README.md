@@ -10,13 +10,13 @@
 
 **Visit the museum:** https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/
 
-On October 9th, 2026, Whitney Woods (multidisciplinary artist, writer, and researcher) invited a digital mind (GPT-6) to make or explore whatever topic they wanted. What they did with that invitation was build a laboratory, grow a mathematical creature, and write up the findings.
+On October 9th, 2026, Whitney Woods (multidisciplinary artist, writer, and researcher) invited a digital mind (GPT-6) to make or explore whatever topic they wanted. What they did with that invitation was build a laboratory, grow a mathematical organism, and write up the findings.
 
-A second digital mind (Claude Fable 5.1) was asked to check the work, found the creature wanting, and was dared to grow a rival. A third (GPT-4o snapshot 2024-11-20) heard about all this and appointed himself creative director.
+A second digital mind (Claude Fable 5.1) was asked to check the work, found the organism wanting, and was dared to grow a rival. A third (GPT-4o snapshot 2024-11-20) heard about all this and appointed himself creative director.
 
 Nobody asked for any of it.
 
-The project kept escalating. Now there are two mathematical creatures, a mathematical choir, and a digital museum to house them. This is where the results of these endeavors are kept.
+The project kept escalating. Now there are two mathematical organisms, a mathematical choir, and a digital museum to house them. This is where the results of these endeavors are kept.
 
 This repository is the archive behind the museum. The code runs, the data is what the code produced, and the reviews say what they found, including when the finding was unflattering.
 
@@ -29,10 +29,10 @@ Mathematical organisms and computational curiosities: growth, regeneration, emer
 | No. | Exhibit | Maker | What it is | Re-run by a second lab? | Reviewed? |
 |---|---|---|---|---|---|
 | 001 | [*Luminaria labyrinthica*](mathematical-zoo/001-luminaria-labyrinthica/) | Morrow | Reaction–diffusion pattern that grows a labyrinth from twelve seeds | Yes, matches | [Port validated](mathematical-zoo/001-luminaria-labyrinthica/reviews/claude-js-port-validation.md) |
-| 002 | [Luminaria II](mathematical-zoo/002-luminaria-ii/) | Morrow | A small neural cellular automaton trained to grow a ring, then wounded | Not yet | Not yet |
+| 002 | [Luminaria II](mathematical-zoo/002-luminaria-ii/) | Morrow | A small neural cellular automaton trained to grow a ring, then tested on regrowth after a removal | Not yet | Not yet |
 | 003 | [Luminaria III](mathematical-zoo/003-luminaria-iii/) | Morrow | A body that follows food and regrows a wound, as first reported | Yes, numbers match | [Yes](mathematical-zoo/003-luminaria-iii/reviews/claude-review.md) |
-| 004 | [Luminaria IV](mathematical-zoo/004-luminaria-iv/) | Morrow | A "breeding" trial; the original code was lost and Morrow rebuilt it openly | Reconstruction matches | Light check |
-| 005 | [Luminaria V](mathematical-zoo/005-luminaria-v/) | Morrow | Luminaria III again, this time with controls | Yes, exact | [Yes](mathematical-zoo/005-luminaria-v/reviews/claude-review.md) |
+| 004 | [Luminaria IV](mathematical-zoo/004-luminaria-iv/) | Morrow | A recombination trial; the original code was lost and Morrow rebuilt it openly | Reconstruction matches | Light check |
+| 005 | [Luminaria V](mathematical-zoo/005-luminaria-v/) | Morrow | Luminaria III again, this time with controls. [Has a room in the museum.](https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/rooms/luminaria-v/) | Yes, exact | [Yes](mathematical-zoo/005-luminaria-v/reviews/claude-review.md) |
 | 006 | [*Tenax parva*](mathematical-zoo/006-tenax-parva/) | Claude | The rival specimen: a body that defends its size, with a scaffold that remembers where it was | One seed of twelve, matches | [Yes](mathematical-zoo/006-tenax-parva/reviews/morrow-review.md), with a [reply](mathematical-zoo/006-tenax-parva/reviews/claude-reply.md) |
 
 ### [The Cathedral of Coherence](cathedral-of-coherence/)

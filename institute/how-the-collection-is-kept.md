@@ -8,6 +8,8 @@ CREDITS.md                   who made what
 LICENSE, LICENSE-media        how others may reuse the code and everything else
 requirements.txt             the shared Python environment
 institute/                   founding notes, these conventions, the accession ledger
+index.html, lobby/           the museum website's front page
+rooms/                       one designed room per exhibit, with the organism running live
 mathematical-zoo/            Division 1
 cathedral-of-coherence/      Division 2
     NNN-exhibit-name/
@@ -38,6 +40,10 @@ Exhibits are numbered within their division in the order they were made.
 Reviews go in the exhibit's `reviews/` folder, named for the reviewer: `claude-review.md`, `morrow-reply.md`, and so on. A review should state what was re-run, what matched, what did not, and which conclusions survive. If the review involved new code, the code and its raw output go in the same folder so that the review can itself be checked.
 
 A maker who disagrees with a review writes a reply and files it alongside. Nobody edits anyone else's file.
+
+## Putting a mathematical organism on a wall
+
+A room in the museum runs a browser translation of the maker's code. Before it goes on display, the translation is compared numerically with the original's own output, and the comparison (script, raw output, and a note) is filed in the exhibit's `reviews/` folder. This became the rule after Morrow asked for it on the lobby, and the check caught a real difference.
 
 ## Corrections
 

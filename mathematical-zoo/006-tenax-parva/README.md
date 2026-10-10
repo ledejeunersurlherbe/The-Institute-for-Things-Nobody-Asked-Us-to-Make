@@ -4,7 +4,7 @@
 
 ![Tenax parva results](original/tenax_figure.png)
 
-**What it is.** A simulated body on a walled 128 × 128 grid, with two mechanisms. An inhibitor produced by the tissue stops growth at a set size. A slow "scaffold" records where tissue has been, and acts only where the record and the present body disagree. The experiment cuts the body, adds to it, erases the scaffold, and switches the inhibitor off, each time against an untouched twin.
+**What it is.** A simulated body on a walled 128 × 128 grid, with two mechanisms. An inhibitor produced by the tissue stops growth at a set size. A slow "scaffold" records where tissue has been, and acts only where the record and the present body disagree. The experiment removes part of the body, adds to it, erases the scaffold, and switches the inhibitor off, each time against an untouched twin.
 
 It was built after the [Luminaria V review](../005-luminaria-v/reviews/claude-review.md), when Whit asked the reviewer whether it could do better.
 
@@ -19,27 +19,27 @@ It was built after the [Luminaria V review](../005-luminaria-v/reviews/claude-re
 
 Two predictions were written into the code header before any runs:
 
-1. **Size.** Amputated and grafted bodies both return to within 5% of their untouched twin, and a body with its inhibitor switched off does not.
-2. **Position.** After amputation, a body with its scaffold intact ends closer to its old position than one whose scaffold was erased in the wound.
+1. **Size.** Bodies with tissue removed or added both return to within 5% of their untouched twin, and a body with its inhibitor switched off does not.
+2. **Position.** After a removal, a body with its scaffold intact ends closer to its old position than one whose scaffold was erased in the removed region.
 
 Results over 12 seeds, 5,000 steps after perturbation, mass relative to the untouched twin:
 
 | Arm | Mass at start | Mass at end | Distance from old position |
 |---|---:|---:|---:|
-| Amputated 38%, scaffold intact | 0.62 | 0.98 | 2.9 cells |
-| Amputated, scaffold erased in the wound | 0.62 | 0.92 | 7.8 cells |
-| Grafted +19% | 1.19 | 1.01 | 1.2 cells |
+| 38% removed, scaffold intact | 0.62 | 0.98 | 2.9 cells |
+| 38% removed, scaffold erased in the removed region | 0.62 | 0.92 | 7.8 cells |
+| 19% added | 1.19 | 1.01 | 1.2 cells |
 | Inhibitor switched off | 1.00 | 8.3, reaching the walls | n/a |
 
-- Size is defended in both directions: the body regrows when cut and shrinks when overfed.
-- Scaffold-intact bodies ended closer to home in 12 of 12 seeds, in all 20 runs with every parameter jittered ±10%, and across four other wound shapes.
+- Size is defended in both directions: the body regrows when part is removed and shrinks when extra is added.
+- Scaffold-intact bodies ended closer to home in 12 of 12 seeds, in all 20 runs with every parameter jittered ±10%, and across four other removal shapes.
 
 ## Where it failed and where it is weak
 
 - **A failed prediction.** The scaffold-erased arm did not reach the 5% band in any of the 12 seeds. On a 25,000-step follow-up it reaches 0.99, so it is slow, not settled somewhere else. The scaffold drags on new tissue far more than its maker expected.
 - **The bodies had not fully settled.** The untouched twins were still growing about 5% over the follow-up. Pairing each arm with its twin corrects for this, but the experiment was started too early.
 - **Position recovery is partial:** 2.9 cells off, not zero.
-- **Erasing the scaffold is itself an injury.** Tissue sitting over erased scaffold recedes even when nothing was cut.
+- **Erasing the scaffold is itself a disturbance.** Tissue sitting over erased scaffold recedes even when nothing was removed.
 - **The body is a round blob.** "Remembers where it was" is a much smaller claim than "remembers its shape".
 - **It went second.** This specimen was built with a specific critique in hand, on a narrower question than the one Morrow chose from a blank page.
 
@@ -50,7 +50,7 @@ Results over 12 seeds, 5,000 steps after perturbation, mass relative to the unto
 > The supplied implementation was independently executed for one seed, producing results consistent with the original twelve-seed report. The broader robustness analysis has not been independently replicated in full. Findings support engineered size regulation and scaffold-assisted recovery under the tested conditions.
 > — Morrow's archival notation
 
-The other eleven seeds, the parameter jitter and the alternative wound shapes still rest on the maker's run alone.
+The other eleven seeds, the parameter jitter and the alternative removal shapes still rest on the maker's run alone.
 
 Morrow's remaining critiques, all accepted by the maker: the scaffold is engineered in, not emergent; the body has no resource-dependent metabolism; and recovering position is not the same as recovering shape.
 
@@ -64,7 +64,7 @@ Morrow's remaining critiques, all accepted by the maker: the scaffold is enginee
 | `tenax_results.txt` | Printed results from the maker's run |
 | `tenax_summary.csv` | One row per arm |
 | `tenax_timeseries.csv` | Every arm, every seed, every 50 steps |
-| `tenax_robustness.csv` | Parameter jitter and other wound shapes |
+| `tenax_robustness.csv` | Parameter jitter and other removal shapes |
 | `tenax_figure.png` | The figure |
 
 ## Run it
