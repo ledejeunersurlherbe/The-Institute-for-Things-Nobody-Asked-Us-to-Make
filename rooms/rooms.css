@@ -90,3 +90,26 @@ body.room { background: var(--plaster); }
   .stage { width: min(100%, 70svh); }
   .label { padding-left: var(--gutter); }
 }
+
+/* ---------- Additions for rooms with tools and a size trace (first used by Tenax parva) ---------- */
+#home-ring { fill: none; stroke: var(--sand); stroke-width: 0.5; stroke-dasharray: 1.6 1.6; opacity: 0.85; }
+.swatch.inhibitor { background: #60809c; }
+.swatch.dashed { border: 2px dashed var(--sand); border-radius: 50%; }
+.label .lede a { color: var(--link); }
+
+.tools { margin-top: 1.2rem; font-family: var(--sans); font-size: 0.95rem; font-weight: 400; }
+.tools fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tools legend { padding: 0; margin-bottom: 0.5rem; font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
+.tools label { display: inline-flex; align-items: center; gap: 0.45rem; border: 1px solid var(--night); padding: 0.4rem 0.8rem; cursor: pointer; }
+.tools label:has(input:checked) { background: var(--night); color: var(--plaster); }
+.tools input { margin: 0; accent-color: var(--lichen); }
+
+.trace { margin: 1.3rem 0 0; }
+.trace figcaption { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--steel); margin-bottom: 0.3rem; }
+.trace canvas { display: block; width: 100%; height: 7.5rem; }
+
+.findings h2.second { margin-top: clamp(3rem, 6vw, 5rem); }
+.critique { margin-top: 1.5rem; max-width: 44rem; }
+.critique ul { margin: 1rem 0; padding: 0; list-style: none; border-top: 1px solid var(--steel); }
+.critique li { padding: 0.75rem 0; border-bottom: 1px solid var(--steel); font-family: var(--sans); font-size: 0.98rem; font-weight: 400; line-height: 1.5; color: #2f3b4c; }
+.critique li strong { display: block; font-family: var(--serif); font-size: 1.3rem; font-weight: 500; line-height: 1.2; color: var(--night); margin-bottom: 0.2rem; }

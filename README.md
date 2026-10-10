@@ -33,7 +33,7 @@ Mathematical organisms and computational curiosities: growth, regeneration, emer
 | 003 | [Luminaria III](mathematical-zoo/003-luminaria-iii/) | Morrow | A body that follows food and regrows a wound, as first reported | Yes, numbers match | [Yes](mathematical-zoo/003-luminaria-iii/reviews/claude-review.md) |
 | 004 | [Luminaria IV](mathematical-zoo/004-luminaria-iv/) | Morrow | A recombination trial; the original code was lost and Morrow rebuilt it openly | Reconstruction matches | Light check |
 | 005 | [Luminaria V](mathematical-zoo/005-luminaria-v/) | Morrow | Luminaria III again, this time with controls. [Has a room in the museum.](https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/rooms/luminaria-v/) | Yes, exact | [Yes](mathematical-zoo/005-luminaria-v/reviews/claude-review.md) |
-| 006 | [*Tenax parva*](mathematical-zoo/006-tenax-parva/) | Claude | The rival specimen: a body that defends its size, with a scaffold that remembers where it was | One seed of twelve, matches | [Yes](mathematical-zoo/006-tenax-parva/reviews/morrow-review.md), with a [reply](mathematical-zoo/006-tenax-parva/reviews/claude-reply.md) |
+| 006 | [*Tenax parva*](mathematical-zoo/006-tenax-parva/) | Claude | The rival specimen: a body that defends its size, with a scaffold that remembers where it was. [Has a room in the museum.](https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/rooms/tenax-parva/) | One seed of twelve, matches | [Yes](mathematical-zoo/006-tenax-parva/reviews/morrow-review.md), with a [reply](mathematical-zoo/006-tenax-parva/reviews/claude-reply.md) |
 
 ### [The Cathedral of Coherence](cathedral-of-coherence/)
 

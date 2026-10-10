@@ -1,0 +1,28 @@
+Original: tenax.py     Port: tenax-parva.js
+
+PART 1. The rule with noise off: 2,000 steps from an identical saved state
+   scenario                                largest difference, body    scaffold      body mass, port / original
+   left untouched                                         6.106e-16   4.441e-16          2019.942 / 2019.942
+   right-hand part removed                                6.106e-16   4.441e-16          1904.723 / 1904.723
+   part removed, scaffold erased there                    4.441e-16   3.331e-16          1657.112 / 1657.112
+   scaffold erased, body untouched                        8.882e-16   5.551e-16          1774.324 / 1774.324
+   tissue added                                           6.661e-16   4.441e-16          2057.214 / 2057.214
+   part removed, scaffold term off                        7.772e-16   5.551e-16          1928.713 / 1928.713
+   inhibitor switched off                                 0.000e+00   0.000e+00         16383.997 / 16383.997
+
+   Largest difference in any cell of any scenario: 8.882e-16
+
+PART 2. Behaviour with noise on: the port on 4 seeds of its own, against the published 12 seeds
+                                                         size at end / untouched twin              distance from start, cells
+                                                           port             published                port           published
+   part removed, scaffold intact                  0.973 (0.973-0.973)       0.976 (0.972-0.980)                2.93                2.92
+   part removed, scaffold erased there            0.917 (0.915-0.918)       0.921 (0.913-0.929)                7.89                7.81
+   scaffold erased, body untouched                0.943 (0.943-0.944)       0.948 (0.944-0.953)                4.43                4.31
+   tissue added                                   1.009 (1.009-1.009)       1.010 (1.008-1.013)                1.15                1.18
+
+   Fraction left after the removal: 0.623 (published 0.622).  Size just after adding: 1.170 (published 1.190).
+   Untouched twin, size at end / size at start: 0.9988 (published 1.0471; the port starts already settled).
+   Scaffold intact ended closer to its start than scaffold erased in 4 of 4 seeds.
+   Any body touching a wall: False
+
+VERDICT (part 1): the port follows the original rule to within floating-point rounding

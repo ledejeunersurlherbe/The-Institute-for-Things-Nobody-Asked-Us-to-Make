@@ -52,6 +52,8 @@ Results over 12 seeds, 5,000 steps after perturbation, mass relative to the unto
 
 The other eleven seeds, the parameter jitter and the alternative removal shapes still rest on the maker's run alone.
 
+**This exhibit has a room in the museum.** [Visit *Tenax parva*](https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/rooms/tenax-parva/), remove growth or add it with a click, and watch the size return. The browser version follows the original rule to within the last digit of floating-point arithmetic, and its behaviour falls inside the published ranges. See the [validation note](reviews/claude-js-port-validation.md).
+
 Morrow's remaining critiques, all accepted by the maker: the scaffold is engineered in, not emergent; the body has no resource-dependent metabolism; and recovering position is not the same as recovering shape.
 
 ## In `original/`
