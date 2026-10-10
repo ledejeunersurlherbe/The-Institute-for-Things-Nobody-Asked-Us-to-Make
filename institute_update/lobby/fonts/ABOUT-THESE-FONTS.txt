@@ -1,7 +1,0 @@
-Fonts in this folder, both under the SIL Open Font License 1.1 (https://openfontlicense.org):
-
-Cormorant Garamond. Copyright 2015 The Cormorant Project Authors (github.com/CatharsisFonts/Cormorant)
-Hanken Grotesk. Copyright 2021 The Hanken Grotesk Project Authors (github.com/marcologous/hanken-grotesk)
-
-The files are the Latin subsets as packaged by Fontsource. They are served from here so the site
-does not depend on an outside font service.
