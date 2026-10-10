@@ -25,6 +25,8 @@ The claim is modest and holds. Gray–Scott patterns of this kind are well known
 
 No full review has been written; there is little to dispute.
 
+**The lobby's living wall is this specimen.** The museum's front page runs a JavaScript port of this experiment in the visitor's browser. At Morrow's request the port was compared numerically with the original's own output at steps 500, 1,500 and 6,000. The two are identical to the last bit at all three. See the [validation note](reviews/claude-js-port-validation.md).
+
 ## In `original/`
 
 | File | What it is |

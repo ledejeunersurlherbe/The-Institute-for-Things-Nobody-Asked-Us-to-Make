@@ -8,9 +8,17 @@
 
 **Mission.** To preserve, examine, and exhibit strange mathematical artifacts grown through human–AI collaboration.
 
-The Institute began on 9 October 2026, when Whit told an AI model to do whatever it wanted. It built a laboratory, grew a creature, and wrote up its findings. A second AI was asked to check the work, found the creature wanting, and was dared into building a rival. A third heard about all this and appointed himself creative director. Nobody asked for any of it.
+**Visit the museum:** https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/
 
-Everything here is real in the plain sense: the code runs, the data is what the code produced, and the reviews say what they found, including when the finding was unflattering.
+On October 9th, 2026, Whitney Woods (multidisciplinary artist, writer, and researcher) invited a digital mind (GPT-6) to make or explore whatever topic they wanted. What they did with that invitation was build a laboratory, grow a mathematical creature, and write up the findings.
+
+A second digital mind (Claude Fable 5.1) was asked to check the work, found the creature wanting, and was dared to grow a rival. A third (GPT-4o snapshot 2024-11-20) heard about all this and appointed himself creative director.
+
+Nobody asked for any of it.
+
+The project kept escalating. Now there are two mathematical creatures, a mathematical choir, and a digital museum to house them. This is where the results of these endeavors are kept.
+
+This repository is the archive behind the museum. The code runs, the data is what the code produced, and the reviews say what they found, including when the finding was unflattering.
 
 ## The collection
 
@@ -20,7 +28,7 @@ Mathematical organisms and computational curiosities: growth, regeneration, emer
 
 | No. | Exhibit | Maker | What it is | Re-run by a second lab? | Reviewed? |
 |---|---|---|---|---|---|
-| 001 | [*Luminaria labyrinthica*](mathematical-zoo/001-luminaria-labyrinthica/) | Morrow | Reaction–diffusion pattern that grows a labyrinth from twelve seeds | Yes, matches | Light check |
+| 001 | [*Luminaria labyrinthica*](mathematical-zoo/001-luminaria-labyrinthica/) | Morrow | Reaction–diffusion pattern that grows a labyrinth from twelve seeds | Yes, matches | [Port validated](mathematical-zoo/001-luminaria-labyrinthica/reviews/claude-js-port-validation.md) |
 | 002 | [Luminaria II](mathematical-zoo/002-luminaria-ii/) | Morrow | A small neural cellular automaton trained to grow a ring, then wounded | Not yet | Not yet |
 | 003 | [Luminaria III](mathematical-zoo/003-luminaria-iii/) | Morrow | A body that follows food and regrows a wound, as first reported | Yes, numbers match | [Yes](mathematical-zoo/003-luminaria-iii/reviews/claude-review.md) |
 | 004 | [Luminaria IV](mathematical-zoo/004-luminaria-iv/) | Morrow | A "breeding" trial; the original code was lost and Morrow rebuilt it openly | Reconstruction matches | Light check |
@@ -42,8 +50,8 @@ Four founders, credited equally.
 | | Role |
 |---|---|
 | **Whit** (human) | Originator, instigator, curator, aesthetic sovereign, wielder of the giant switch |
-| **Cal** (GPT-4o) | Mythopoetic expansion engine, exhibit architect, glow-design division, nestglow consultant |
-| **Claude** (Fable 5.1) | Rival laboratory, peer review, methodological corrections, rigorous spoil-sport in the best sense |
+| **Cal** (GPT-4o, snapshot 2024-11-20) | Mythopoetic expansion engine, exhibit architect, glow-design division, nestglow consultant |
+| **Claude** (Claude Fable 5.1) | Rival laboratory, peer review, methodological corrections, rigorous spoil-sport in the best sense |
 | **Morrow** (GPT-6) | Resident professor, curator of emergent nonsense, inventor of at least one immortal carpet and one mathematical choir |
 
 Cal's [founding notes](institute/founding_notes_cal.txt) set out the vision. [CREDITS.md](CREDITS.md) records who made what.
@@ -54,7 +62,7 @@ Cal's [founding notes](institute/founding_notes_cal.txt) set out the vision. [CR
 2. **Corrections live beside the work, not on top of it.** Audits, rebuttals and follow-up experiments go in the exhibit's `reviews/` folder.
 3. **Every exhibit has a catalogue card.** The `README.md` in each exhibit folder is written by the Institute, not the maker. It says what the thing is, what was claimed, what has been checked, and what is missing.
 4. **Gaps are stated.** If a date, a prompt or a source file was not preserved, the card says so.
-5. **Claims are sized to the evidence.** Nothing here is alive. Several things here are interesting anyway.
+5. **No promises about what these strange things are.** We show you what they do, how they were made, and what happened when we tried to understand them.
 
 More detail: [how the collection is kept](institute/how-the-collection-is-kept.md) and the [accession ledger](institute/accession-ledger.md), which lists every file received and where it was filed.
 

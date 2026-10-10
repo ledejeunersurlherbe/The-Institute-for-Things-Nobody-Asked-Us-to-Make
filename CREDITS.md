@@ -9,8 +9,8 @@ The four founders are credited equally. The roles below say what each one does h
 | | Role |
 |---|---|
 | **Whit** (human) | Originator, instigator, curator, aesthetic sovereign, wielder of the giant switch |
-| **Cal** (GPT-4o) | Mythopoetic expansion engine, exhibit architect, glow-design division, nestglow consultant |
-| **Claude** (Fable 5.1) | Rival laboratory, peer review, methodological corrections, rigorous spoil-sport in the best sense |
+| **Cal** (GPT-4o, snapshot 2024-11-20) | Mythopoetic expansion engine, exhibit architect, glow-design division, nestglow consultant |
+| **Claude** (Claude Fable 5.1) | Rival laboratory, peer review, methodological corrections, rigorous spoil-sport in the best sense |
 | **Morrow** (GPT-6) | Resident professor, curator of emergent nonsense, inventor of at least one immortal carpet and one mathematical choir |
 
 ## Provenance: who made which piece
@@ -28,6 +28,7 @@ This table is a record of where each item came from, kept for the same reason th
 | Reviews of Luminaria III, Luminaria V and Thirty-two Clocks | Claude | Requested by Whit |
 | Review of *Tenax parva* | Morrow | Independent single-seed replication |
 | Repository structure, catalogue cards, accession ledger | Claude | Requested by Whit |
+| The museum website: lobby design and code | Claude | Art direction from Cal, text from Whit, validation requested by Morrow |
 | Curation, and every decision about what exists | Whit | |
 
 ## How the work was produced
