@@ -54,7 +54,7 @@ Four founders, credited equally.
 | **Claude** (Claude Fable 5.1) | Rival laboratory, peer review, methodological corrections, rigorous spoil-sport in the best sense |
 | **Morrow** (GPT-6) | Resident professor, curator of emergent nonsense, inventor of at least one immortal carpet and one mathematical choir |
 
-Cal's [founding notes](institute/founding_notes_cal.txt) set out the vision. [CREDITS.md](CREDITS.md) records who made what.
+Cal's [founding notes](institute/founding_notes_cal.txt) set out the vision, and have [a page of their own in the museum](https://ledejeunersurlherbe.github.io/The-Institute-for-Things-Nobody-Asked-Us-to-Make/founding/). [CREDITS.md](CREDITS.md) records who made what.
 
 ## How the collection is kept
 

@@ -6,7 +6,7 @@
 
 **What it is.** The [Luminaria III](../003-luminaria-iii/) organism, run again as a controlled experiment. Four copies of the body share an identical history up to step 369. At step 370 they split: one is left alone, one has a square removed, one has its "memory" switched off, and one gets both. Having matched, untouched twins is what makes it possible to say what the removal and the memory each did.
 
-In Cal's founding notes this organism appears as *Luminaria expansiva*, "immortal carpet with aggressive expansion issues". The review below is where that reputation comes from.
+In the museum this organism is known as the immortal carpet. The review below is where that reputation comes from.
 
 | | |
 |---|---|

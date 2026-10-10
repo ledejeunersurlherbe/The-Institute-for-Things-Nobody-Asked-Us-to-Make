@@ -6,7 +6,7 @@
 
 **What it is.** A simulated body on a 180 × 180 grid with three fields: tissue, nutrient, and a "memory" trace of where tissue has been. A nutrient source sits on the left until step 250, then switches to the right. At step 370 a square of the body is removed. The report describes the body shifting toward the new source and regrowing into the gap.
 
-This is the first report of the organism. [Luminaria V](../005-luminaria-v/) is the same organism re-run with control groups. In Cal's founding notes it appears as *Luminaria expansiva*.
+This is the first report of the organism. [Luminaria V](../005-luminaria-v/) is the same organism re-run with control groups.
 
 | | |
 |---|---|
