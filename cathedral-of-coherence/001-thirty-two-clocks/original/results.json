@@ -1,0 +1,150 @@
+{
+  "name": "Thirty-two Clocks",
+  "seed": 10102026,
+  "N": 32,
+  "duration_s": 105.0,
+  "dt_s": 0.005,
+  "audio_sample_rate_hz": 22050,
+  "natural_frequency_range_hz": [
+    0.55,
+    0.9888
+  ],
+  "condition_summaries": {
+    "Independent": {
+      "time_window_s": [
+        0,
+        22
+      ],
+      "mean_coherence": 0.0965,
+      "mean_control_coherence": 0.0965,
+      "median_coherence": 0.0871,
+      "note_events": 556
+    },
+    "Weak coupling": {
+      "time_window_s": [
+        35,
+        48
+      ],
+      "mean_coherence": 0.2249,
+      "mean_control_coherence": 0.1051,
+      "median_coherence": 0.2276,
+      "note_events": 331
+    },
+    "Strong coupling": {
+      "time_window_s": [
+        62,
+        79
+      ],
+      "mean_coherence": 0.9745,
+      "mean_control_coherence": 0.1395,
+      "median_coherence": 0.9745,
+      "note_events": 420
+    },
+    "Released": {
+      "time_window_s": [
+        93,
+        105
+      ],
+      "mean_coherence": 0.1177,
+      "mean_control_coherence": 0.1622,
+      "median_coherence": 0.0812,
+      "note_events": 301
+    }
+  },
+  "robustness_12_seeds": {
+    "strong_coupling_mean_R_range": [
+      0.9579,
+      0.9796
+    ],
+    "control_mean_R_range": [
+      0.1131,
+      0.2034
+    ],
+    "released_mean_R_range": [
+      0.1084,
+      0.223
+    ]
+  },
+  "main_audio": {
+    "peak": 0.5927032232284546,
+    "rms": 0.0783299133181572,
+    "events": 2648,
+    "bytes": 9349244,
+    "midi_notes": [
+      55,
+      65,
+      77,
+      53,
+      48,
+      75,
+      67,
+      51,
+      72,
+      77,
+      51,
+      48,
+      63,
+      60,
+      79,
+      79,
+      63,
+      70,
+      53,
+      58,
+      48,
+      70,
+      58,
+      60,
+      67,
+      51,
+      65,
+      53,
+      55,
+      55,
+      75,
+      72
+    ]
+  },
+  "control_audio": {
+    "peak": 0.429343044757843,
+    "rms": 0.07851507514715195,
+    "events": 2648,
+    "bytes": 9349244,
+    "midi_notes": [
+      55,
+      65,
+      77,
+      53,
+      48,
+      75,
+      67,
+      51,
+      72,
+      77,
+      51,
+      48,
+      63,
+      60,
+      79,
+      79,
+      63,
+      70,
+      53,
+      58,
+      48,
+      70,
+      58,
+      60,
+      67,
+      51,
+      65,
+      53,
+      55,
+      55,
+      75,
+      72
+    ]
+  },
+  "model": "dtheta_i/dt = omega_i + K(t) * Im(z * exp(-i theta_i)), z = mean(exp(i theta_i))",
+  "interpretation": "External coupling produces temporary phase synchronization. No learning, choice, cognition, or autonomous agency is modeled."
+}

@@ -1,0 +1,5 @@
+as published (source moves at 250, grid wraps)  centre x at 250: 32.48, at 520: 39.24, shift +6.75 | at 620: wound 0.420, mass 5272.72, mass beyond x=150: 649.8
+source never moves                              centre x at 250: 32.48, at 520: 37.48, shift +5.00 | at 620: wound 0.420, mass 5024.59, mass beyond x=150: 400.5
+no nutrient source at all                       centre x at 250: 40.00, at 520: 36.94, shift -3.06 | at 620: wound 0.420, mass 3800.16, mass beyond x=150: 0.0
+walled grid, source moves                       centre x at 250: 32.48, at 520: 30.74, shift -1.74 | at 620: wound 0.420, mass 4624.36, mass beyond x=150: 0.0
+walled grid, source never moves                 centre x at 250: 32.48, at 520: 30.74, shift -1.74 | at 620: wound 0.420, mass 4625.71, mass beyond x=150: 0.0

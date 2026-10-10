@@ -1,0 +1,19 @@
+order_parameter.csv rows 21001 21001 max abs diff 0.0
+note_events.csv rows 2648 2648 max abs diff 0.0
+oscillators.csv rows 32 32 max abs diff 0.0
+seed_sweep.csv rows 12 12 max abs diff 0.0
+thirty_two_clocks.wav 22050 (2337300, 2) max sample diff 0
+uncoupled_control.wav 22050 (2337300, 2) max sample diff 0
+excerpt 22050 (661500, 2) 30.0 s; equals 44-74s slice of main: 0
+freqs: min 0.550 max 0.989 mean 0.7880 -> mean period 1.2690 ; n clipped at 0.55: 1
+independent median period per clock: min 1.0113 max 1.8182 spread 0.8068
+weak        median period per clock: min 1.0095 max 1.8123 spread 0.8028
+strong      median period per clock: min 1.2690 max 1.2690 spread 0.0000
+released    median period per clock: min 1.0113 max 1.8182 spread 0.8068
+strong window: 14 beats, 13 with all 32 clocks; within-beat spread (first to last strike): median 0.199 s, of a 1.269 s cycle
+strike order vs natural frequency within each full beat (Spearman): min -1.000 max -1.000 over 13 beats
+theory: critical K about 1.15 (weak phase K=1 is below it, strong K=3 well above)
+  R at 80s: 0.974  R at 85s: 0.483  R at 86s: 0.283  R at 88s: 0.072  R at 90s: 0.024  R at 93s: 0.272  R at 100s: 0.079
+events coupled vs control: equal totals? 2648
+dt 0.005 strong-window mean R 0.9745 events 2648
+dt 0.001 strong-window mean R 0.9745 events 2648

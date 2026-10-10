@@ -1,0 +1,68 @@
+0. baseline (my reimplementation must match archive)
+  sham_memory                370: 0.4044 (mass 3059) 430: 0.4814 (mass 3563) 620: 0.7198 (mass 5613)
+  injured_memory             370: 0.0000 (mass 2645) 430: 0.1081 (mass 3174) 620: 0.4204 (mass 5273)
+  sham_no_memory             370: 0.4043 (mass 3058) 430: 0.4792 (mass 3548) 620: 0.7116 (mass 5523)
+  injured_no_memory          370: 0.0000 (mass 2644) 430: 0.0960 (mass 3149) 620: 0.4008 (mass 5171)
+  pre-injury: frac of wound cells with B>0.5: 0.400 ; M mean in wound 0.395 ; M>0.99 frac in body(B>.5) 0.950
+  N stats at 369: max 1.500, frac of grid with N>0.01: 0.125, mean N inside body(B>.5): 0.0210, mean N in wound 0.00011
+  B saturation: frac of body cells (B>0.01) with B>0.99: 0.885
+  injured_memory @620: density on old footprint 0.867, on never-occupied part 0.122 ; sham same split 1.000 / 0.533
+  injured_no_memory @620: density on old footprint 0.839, on never-occupied part 0.108 ; sham same split 1.000 / 0.519
+  memory effect in injured 0.0196, in sham 0.0082, diff-in-diff 0.0114
+1. local memory wipe in wound only (regrowth term left on)
+  injured_memory             430: 0.1081 (mass 3174) 620: 0.4204 (mass 5273)
+  injured_wipeM              430: 0.0993 (mass 3165) 620: 0.4116 (mass 5263)
+  injured_no_memory          430: 0.0960 (mass 3149) 620: 0.4008 (mass 5171)
+2. no nutrient source at all
+  sham_memory                370: 0.4043 (mass 2174) 430: 0.4814 (mass 2588) 620: 0.7198 (mass 4141)
+  injured_memory             370: 0.0000 (mass 1760) 430: 0.1080 (mass 2199) 620: 0.4201 (mass 3800)
+  sham_no_memory             370: 0.4043 (mass 2174) 430: 0.4792 (mass 2575) 620: 0.7116 (mass 4080)
+  injured_no_memory          370: 0.0000 (mass 1760) 430: 0.0959 (mass 2177) 620: 0.4008 (mass 3728)
+3. source never switches
+  sham_memory                370: 0.4044 (mass 3059) 430: 0.4814 (mass 3556) 620: 0.7198 (mass 5365)
+  injured_memory             370: 0.0000 (mass 2645) 430: 0.1082 (mass 3168) 620: 0.4205 (mass 5025)
+  sham_no_memory             370: 0.4043 (mass 3059) 430: 0.4792 (mass 3542) 620: 0.7116 (mass 5295)
+  injured_no_memory          370: 0.0000 (mass 2645) 430: 0.0961 (mass 3144) 620: 0.4009 (mass 4943)
+4. non-periodic (walled) boundaries
+  sham_memory                370: 0.4044 (mass 3062) 430: 0.4814 (mass 3509) 620: 0.7198 (mass 4964)
+  injured_memory             370: 0.0000 (mass 2648) 430: 0.1081 (mass 3120) 620: 0.4204 (mass 4624)
+  sham_no_memory             370: 0.4043 (mass 3062) 430: 0.4792 (mass 3496) 620: 0.7116 (mass 4912)
+  injured_no_memory          370: 0.0000 (mass 2648) 430: 0.0960 (mass 3098) 620: 0.4008 (mass 4559)
+   right-edge biomass x>=150 at 620: periodic vs walled
+   periodic 649.8  walled 0.0
+5. flow term off
+  sham_memory                370: 0.4044 (mass 3058) 430: 0.4814 (mass 3563) 620: 0.7198 (mass 5627)
+  injured_memory             370: 0.0000 (mass 2644) 430: 0.1081 (mass 3174) 620: 0.4204 (mass 5287)
+  sham_no_memory             370: 0.4043 (mass 3058) 430: 0.4792 (mass 3548) 620: 0.7116 (mass 5539)
+  injured_no_memory          370: 0.0000 (mass 2644) 430: 0.0961 (mass 3149) 620: 0.4008 (mass 5187)
+6. long run to 3000 steps
+  sham_memory                620: 0.7198 (mass 5613) 1000: 1.0000 (mass 11379) 1500: 1.0000 (mass 20606) 2000: 1.0000 (mass 29229) 3000: 1.0000 (mass 32400)
+  injured_memory             620: 0.4204 (mass 5273) 1000: 0.9616 (mass 11045) 1500: 1.0000 (mass 20187) 2000: 1.0000 (mass 29200) 3000: 1.0000 (mass 32400)
+  sham_no_memory             620: 0.7116 (mass 5523) 1000: 1.0000 (mass 11111) 1500: 1.0000 (mass 19982) 2000: 1.0000 (mass 28583) 3000: 1.0000 (mass 32400)
+  injured_no_memory          620: 0.4008 (mass 5171) 1000: 0.9376 (mass 10772) 1500: 1.0000 (mass 19560) 2000: 1.0000 (mass 28548) 3000: 1.0000 (mass 32400)
+   grid coverage (B>0.5) at 3000: 1.000 of 32400 cells
+7. other wound sites (same 32x32 size), density in that zone
+  interior x20-51,y74-105
+  sham_memory                370: 1.0000 (mass 3059) 430: 1.0000 (mass 3563) 620: 1.0000 (mass 5613)
+  injured_memory             370: 0.0000 (mass 2035) 430: 0.2790 (mass 2824) 620: 0.8711 (mass 5481)
+  sham_no_memory             370: 1.0000 (mass 3058) 430: 1.0000 (mass 3548) 620: 1.0000 (mass 5523)
+  injured_no_memory          370: 0.0000 (mass 2034) 430: 0.2516 (mass 2781) 620: 0.8410 (mass 5360)
+  upper flank x20-51,y40-71
+  sham_memory                370: 0.2533 (mass 3059) 430: 0.3277 (mass 3563) 620: 0.5620 (mass 5613)
+  injured_memory             370: 0.0000 (mass 2799) 430: 0.0971 (mass 3323) 620: 0.3789 (mass 5411)
+  sham_no_memory             370: 0.2532 (mass 3058) 430: 0.3257 (mass 3548) 620: 0.5538 (mass 5523)
+  injured_no_memory          370: 0.0000 (mass 2799) 430: 0.0868 (mass 3300) 620: 0.3625 (mass 5312)
+  front, shifted up y50-81
+  sham_memory                370: 0.1336 (mass 3059) 430: 0.1887 (mass 3563) 620: 0.4238 (mass 5613)
+  injured_memory             370: 0.0000 (mass 2922) 430: 0.0635 (mass 3434) 620: 0.3102 (mass 5496)
+  sham_no_memory             370: 0.1335 (mass 3058) 430: 0.1870 (mass 3548) 620: 0.4140 (mass 5523)
+  injured_no_memory          370: 0.0000 (mass 2922) 430: 0.0566 (mass 3413) 620: 0.2957 (mass 5401)
+  empty space ahead x90-121
+  sham_memory                370: 0.0000 (mass 3059) 430: 0.0000 (mass 3563) 620: 0.0000 (mass 5613)
+  injured_memory             370: 0.0000 (mass 3059) 430: 0.0000 (mass 3563) 620: 0.0000 (mass 5613)
+  sham_no_memory             370: 0.0000 (mass 3058) 430: 0.0000 (mass 3548) 620: 0.0000 (mass 5523)
+  injured_no_memory          370: 0.0000 (mass 3058) 430: 0.0000 (mass 3548) 620: 0.0000 (mass 5523)
+8. parameter jitter +-10%, 30 draws: memory diff-in-diff at 620 and injured/sham ratio
+   diff-in-diff: min -0.0001 median 0.0039 max 0.0327, positive in 21/30
+   injured mem-nomem: min 0.0000 median 0.0105 max 0.0474, positive in 22/30
+   injured/sham ratio: min 0.550 median 0.617 max 1.000

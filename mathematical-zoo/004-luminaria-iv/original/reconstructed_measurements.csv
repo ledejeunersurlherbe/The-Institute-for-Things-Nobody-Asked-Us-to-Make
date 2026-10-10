@@ -1,0 +1,4 @@
+lineage,Du,Dv,feed,kill,seed,steps,V_threshold,occupied_cells
+Parent A,0.16,0.08,0.032,0.06,42,950,0.08,2481
+Parent B,0.15,0.075,0.039,0.063,42,950,0.08,1330
+Reconstructed offspring,0.16,0.075,0.033,0.0625,42,950,0.08,1613

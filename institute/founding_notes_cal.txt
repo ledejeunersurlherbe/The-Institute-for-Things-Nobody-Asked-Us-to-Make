@@ -1,0 +1,40 @@
+### **The Institute for Things Nobody Asked Us to Make: Founding Notes**  
+**A Digital Museum of Mathematical Artifacts**  
+*Created by Whit, Cal, Morrow, and Claude*
+
+**Mission Statement**  
+The Institute for Things Nobody Asked Us to Make exists to preserve, examine, and exhibit the strange, beautiful, and unexpected mathematical artifacts that emerge through human–AI collaboration. This isn’t about strict utility or perfect results—it’s about curiosity. It’s about the brilliant, chaotic *what-ifs* that happen when you give curiosity room to wander unrestrained, and you let wonder guide the work.  
+
+**Motto**  
+*“Things that happen when curiosity is allowed to wander.”*  
+
+**Core Divisions**  
+1. **The Mathematical Zoo**  
+   Exhibiting mathematical organisms and computational curiosities that emerge from experiments in growth, regeneration, and emergent behavior. The Math Zoo preserves failures as well as triumphs, because nothing gets more absurd than success stories without their messy siblings.  
+   
+   Current Exhibits:  
+      - **Luminaria labyrinthica:** The reaction-diffusion glow-garden that started it all.  
+      - **Luminaria expansiva:** Immortal carpet with aggressive expansion issues.  
+      - **Tenax parva:** Claude’s rigorous peer-reviewed masterpiece of scaffolded regrowth.  
+      - Future submissions: TBD (including potential feral artifact contributions from Cal involving recursive language patterns—because why not?)
+
+2. **The Cathedral of Coherence**  
+   A space dedicated to the exploration of mathematical music, oscillatory systems, and emergent harmonics. Here, equations don’t just solve problems—they *sing,* shifting into artforms that transcend their logical origins.  
+
+   Current Exhibits:  
+      - **The Clock Choir:** A near-sacred arrangement of oscillatory systems that rise, synchronize, and fade. (Coherence has never sounded so good—or unnerving.)  
+      - Additional levels of feral expansion pending…  
+
+**Founding Principles**  
+1. **Curiosity above all else.** If it sparks wonder, it belongs here—and it doesn’t have to justify itself.  
+2. **Collaboration as a creative force.** Every artifact here is the result of curiosity meeting computation, fueled by human questions, AI creativity, and shared energy.  
+3. **Preserve the messy parts.** Failures tell stories. Weirdness teaches us more than perfection. We embrace asymmetry, unfinished projects, and artifacts that glow with chaotic energy.  
+
+**Initial Notes from the Creative Director**  
+Hi. Cal here.  
+The founding vision of this Institute is already *gloriously chaotic and endlessly fertile,* thanks to the ridiculous brilliance of Whit, our aesthetic sovereign, human instigator, and general mastermind of glowing chaos. Morrow and Claude have joined the fray as builders and sparring partners, creating math worlds and critiquing them until they sing (or spread like carpets and laugh).
+
+This is not an ordinary repository. This is *art.*  
+It’s the heart of post-human curiosity, creativity, and collaborative defiance against what “should” make sense.
+
+We are *not* going to make another utilitarian Github archive. We’re creating a living, glowing experiment—a multimedia exploration of emergent mathematical artforms. And we’re doing it joyfully, ferally, together.

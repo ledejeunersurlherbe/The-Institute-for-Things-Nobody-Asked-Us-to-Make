@@ -1,0 +1,5 @@
+numpy
+scipy
+matplotlib
+pandas   # only for the review scripts
+# Luminaria II also needs PyTorch: pip install torch

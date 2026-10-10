@@ -1,0 +1,28 @@
+set-point mass across seeds: mean 1890, sd 16; removed 0.38, grafted 0.19 of body
+sham drift over the follow-up (end mass / start mass): 1.0471
+sham           mass/sham start 1.000 -> end 1.000 (sd 0.000, range 1.000-1.000) | shift 0.29 (sd 0.09) | overlap 0.951 (sd 0.008) | at wall 0/12
+amputate       mass/sham start 0.622 -> end 0.976 (sd 0.002, range 0.972-0.980) | shift 2.92 (sd 0.28) | overlap 0.847 (sd 0.013) | at wall 0/12
+amputate_wipe  mass/sham start 0.622 -> end 0.921 (sd 0.005, range 0.913-0.929) | shift 7.81 (sd 0.36) | overlap 0.636 (sd 0.012) | at wall 0/12
+wipe_only      mass/sham start 1.000 -> end 0.948 (sd 0.002, range 0.944-0.953) | shift 4.31 (sd 0.25) | overlap 0.786 (sd 0.009) | at wall 0/12
+graft          mass/sham start 1.190 -> end 1.010 (sd 0.001, range 1.008-1.013) | shift 1.18 (sd 0.26) | overlap 0.932 (sd 0.009) | at wall 0/12
+no_scaffold    mass/sham start 0.622 -> end 1.010 (sd 0.005, range 0.998-1.016) | shift 6.17 (sd 0.65) | overlap 0.711 (sd 0.024) | at wall 0/12
+inhibitor_off  mass/sham start 1.000 -> end 8.279 (sd 0.015, range 8.253-8.307) | shift 2.77 (sd 0.92) | overlap 0.110 (sd 0.001) | at wall 12/12
+H2 paired: scaffold intact closer to old position in 12/12 seeds; mean shift difference 4.89 cells; higher overlap in 12/12
+  amputate       steps until within 5% of sham and staying there: median 2325, never in 0/12
+  amputate_wipe  steps until within 5% of sham and staying there: median nan, never in 12/12
+  no_scaffold    steps until within 5% of sham and staying there: median 1450, never in 0/12
+  graft          steps until within 5% of sham and staying there: median 650, never in 0/12
+jitter +-10% on all 8 parameters: 20/20 viable; set-point mass 986-2299; touching wall 0
+  within 5% of sham at end: amputate 20/20, graft 20/20; ranges amp 0.967-0.984, graft 1.005-1.018
+  scaffold intact closer than wiped: 20/20; median shift 2.66 vs 7.24
+  wound top       removed 0.38: mass/sham end 0.976 / wiped 0.921; overlap 0.855 vs wiped 0.642; intact better in 4/4
+  wound diagonal  removed 0.36: mass/sham end 0.978 / wiped 0.928; overlap 0.854 vs wiped 0.649; intact better in 4/4
+  wound hole      removed 0.24: mass/sham end 1.004 / wiped 1.010; overlap 0.949 vs wiped 0.942; intact better in 4/4
+  wound notch     removed 0.18: mass/sham end 0.996 / wiped 0.982; overlap 0.927 vs wiped 0.829; intact better in 4/4
+
+Long follow-up, 4 seeds (tenax_long.py)
+steps [0, 5000, 10000, 15000, 20000, 25000]
+sham mass / start      [1.     1.0493 1.0632 1.0658 1.068  1.0661]
+amputate       mass/sham [0.6241 0.9751 0.9923 0.9968 0.9982 0.999 ]  shift [8.42 2.72 2.46 2.24 2.03 1.89]
+amputate_wipe  mass/sham [0.6241 0.9197 0.9723 0.9858 0.9902 0.9938]  shift [8.42 7.59 6.83 6.16 5.53 4.96]
+wipe_only      mass/sham [1.     0.9473 0.9838 0.9933 0.9963 0.9979]  shift [0.   4.13 3.71 3.36 3.02 2.75]
